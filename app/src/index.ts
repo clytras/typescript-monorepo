@@ -10,7 +10,7 @@
 import appPackageJson from '../package.json';
 import libPackageJson from '../../lib/package.json';
 
-export function run() {
+export function run() : void {
   // console.log(`x.getX() == ${x.getX()}`);
 
   console.log(`App name "${appPackageJson.name}" with version ${appPackageJson.version}`);
