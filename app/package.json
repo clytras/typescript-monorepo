@@ -8,7 +8,8 @@
     "build": "rimraf dist && npm run build:types && npm run build:js",
     "build:tsc": "tsc",
     "build:types": "tsc --emitDeclarationOnly",
-    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline"
+    "build:js": "babel src --out-dir dist --extensions \".ts,.tsx\" --source-maps inline",
+    "exec:dist": "npx ts-node ./dist"
   },
   "devDependencies": {
     "@babel/cli": "^7.8.3",
@@ -17,6 +18,8 @@
     "@babel/preset-env": "^7.8.3",
     "@babel/preset-typescript": "^7.8.3",
     "rimraf": "^3.0.2",
+    "ts-node": "^8.9.1",
     "typescript": "^3.7.5"
-  }
+  },
+  "dependencies": {}
 }
